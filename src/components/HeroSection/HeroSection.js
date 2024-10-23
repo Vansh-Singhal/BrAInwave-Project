@@ -1,5 +1,7 @@
 // src/components/HeroSection/HeroSection.js
 import React from 'react';
+import '../../App.css';
+
 
 const HeroSection = () => {
   return (
