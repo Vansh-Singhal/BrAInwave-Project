@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer';
 import CommunitiesPage from './pages/CommunitiesPage';
 import CommunityChat from './pages/CommunityChat';
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
+import BlogPage from './pages/BlogPage';
 
 
 const App = () => {
@@ -15,11 +16,11 @@ const App = () => {
     },
     {path:"/community",
       element : <CommunitiesPage/>
+    },
+    {path:"/blog",
+      element : <BlogPage/>
     }
-    // ,
-    // {Path:"/blog",
-    //   element : <blog/>
-    // },
+    //,
     // {Path:"/about",
     //   element : <about/>
     // },
