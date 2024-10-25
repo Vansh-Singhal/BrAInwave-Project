@@ -21,3 +21,10 @@ background-community-blog{
   background-repeat: no-repeat;
   height: 100%;
 }
+
+.logodiv{
+  height:32px;
+  width:82px;
+  background-image: url('../src/resources/images/logo.jpg');
+  background-size: contain;
+}
