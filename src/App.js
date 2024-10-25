@@ -7,40 +7,40 @@ import CommunitiesPage from './pages/CommunitiesPage';
 import CommunityChat from './pages/CommunityChat';
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 import BlogPage from './pages/BlogPage';
+import FeaturesPage from './pages/FeaturesPage';
 
 
 const App = () => {
   const router = createBrowserRouter([
     {path:"/",
-      element : <LandingPage/>
+      element : <><Header/><LandingPage/></>
     },
     {path:"/community",
-      element : <CommunitiesPage/>
+      element : <><Header/><CommunitiesPage/></>
     },
     {path:"/blog",
-      element : <BlogPage/>
+      element : <><Header/><BlogPage/></>
     }
-    //,
-    // {Path:"/about",
-    //   element : <about/>
-    // },
-    // {Path:"/features",
-    //   element : <features/>
-    // },
-    // {Path:"/contact",
+    ,
+    {path:"/about",
+      element : <><Header/><about/></>
+    },
+    {path:"/features",
+      element : <><Header/><FeaturesPage/></>
+    }
+    // ,
+    // {path:"/contact",
     //   element : <contact/>
     // },
-    // {Path:"/signup",
+    // {path:"/signup",
     //   element : <signup/>
     // }
   ])
   return (
     <div className="App">
-      <Header/>
+      
       <RouterProvider router = {router}/>
-      {/* <LandingPage/> */}
       {/* <CommunityChat/> */}
-      {/* <CommunitiesPage/>/ */}
       <Footer/>
     </div>
   );
