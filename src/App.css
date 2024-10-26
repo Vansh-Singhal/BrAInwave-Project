@@ -28,3 +28,31 @@ background-community-blog{
   background-image: url('../src/resources/images/logo.jpg');
   background-size: contain;
 }
+
+.overlay{
+  width:100%;
+  height:1vh;
+}
+
+.modalOverlay{
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  display:none;
+  height: 100%;
+  background-color: rgba(0,0,0,0.75);
+  z-index: 1;
+}
+
+.modalShow{
+  display:block;
+}
+
+.modalDiv{
+  position: absolute !important;
+  top:-500%;
+  transition: 0.3s ease-out;
+  left:50%;
+  transform:translate(-50%);
+}

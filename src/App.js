@@ -8,6 +8,8 @@ import CommunityChat from './pages/CommunityChat';
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 import BlogPage from './pages/BlogPage';
 import FeaturesPage from './pages/FeaturesPage';
+import AboutPage from './pages/AboutPage';
+import SignUpPage from './pages/SignUpPage';
 
 
 const App = () => {
@@ -23,18 +25,15 @@ const App = () => {
     }
     ,
     {path:"/about",
-      element : <><Header/><about/></>
+      element : <><Header/><AboutPage/></>
     },
     {path:"/features",
       element : <><Header/><FeaturesPage/></>
     }
-    // ,
-    // {path:"/contact",
-    //   element : <contact/>
-    // },
-    // {path:"/signup",
-    //   element : <signup/>
-    // }
+    ,
+    {path:"/signup",
+      element : <><Header/><SignUpPage/></>
+    }
   ])
   return (
     <div className="App">
