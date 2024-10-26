@@ -1,5 +1,6 @@
 import React from 'react';
 import { communities } from './data';
+import { Link } from 'react-router-dom';
 
 const CommunitiesList = () => {
 
@@ -13,7 +14,7 @@ const CommunitiesList = () => {
               <h4 className="font-semibold">{community.name}</h4>
               <p className="text-sm text-gray-500">{community.members} members</p>
             </div>
-            <button className="bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-800">Join</button>
+            <Link to="/chat" className="bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-800">Join</Link>
           </li>
         ))}
       </ul>

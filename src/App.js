@@ -33,13 +33,17 @@ const App = () => {
     ,
     {path:"/signup",
       element : <><Header/><SignUpPage/></>
+    },
+    {
+      path:"/chat",
+      element : <><Header/><CommunityChat/></>
     }
+
   ])
   return (
     <div className="App">
       
       <RouterProvider router = {router}/>
-      {/* <CommunityChat/> */}
       <Footer/>
     </div>
   );
